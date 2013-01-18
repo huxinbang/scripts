@@ -1,0 +1,242 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Ivim by kepbod</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/respond.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="stylesheets/ie.css">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+      <div id="header">
+        <nav>
+          <li class="fork"><a href="https://github.com/kepbod/ivim">View On GitHub</a></li>
+          <li class="downloads"><a href="https://github.com/kepbod/ivim/zipball/master">ZIP</a></li>
+          <li class="downloads"><a href="https://github.com/kepbod/ivim/tarball/master">TAR</a></li>
+          <li class="title">DOWNLOADS</li>
+        </nav>
+      </div><!-- end header -->
+
+    <div class="wrapper">
+
+      <section>
+        <div id="title">
+          <h1>Ivim</h1>
+          <p>I love Vim, and I also love modifing it to adjust it to more convenient and effcient use. So I name it &quot;ivim&quot;!</p>
+          <hr>
+          <span class="credits left">Project maintained by <a href="https://github.com/kepbod">kepbod</a></span>
+          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="http://twitter.com/#!/michigangraham">mattgraham</a></span>
+        </div>
+
+        <h1>ivim - The Vim Distribution of Xiao-Ou Zhang</h1>
+
+<p><a href="http://www.vim.org/"><img src="http://www.vim.org/images/vim_editor.gif" alt="Vim"></a></p>
+
+<p><a href="http://gitego.com/kepbod/ivim#watchers?interval=by_day">See ivim's states on GitEgo</a></p>
+
+<h2>Installation</h2>
+
+<h3>Manual Install</h3>
+
+<ol>
+<li>A Vim/MacVim/gVim with version higher than 7.3 has been installed on your computer, and back up your origin vim stuff;</li>
+<li>Install Vundle to install and update plugins, <code>git clone git://github.com/gmarik/vundle.git $HOME/.vim/bundle/vundle</code>;</li>
+<li>Install hybrid theme, <code>git clone git://github.com/w0ng/vim-hybrid.git $HOME/.vim/bundle/vim-hybrid</code>;</li>
+<li>Get ivim from github website, <code>git clone git://github.com/kepbod/ivim.git $HOME/ivim</code>;</li>
+<li>Make symbolic links of vimrc to your home directory, <code>ln -s $HOME/ivim/vimrc $HOME/.vimrc</code>;</li>
+<li>Install plugins, <code>vim +BundleInstall! +BundleClean! +qa!</code>;</li>
+<li>Just enjoy it!</li>
+</ol><h3>Automatic Install (*nix only)</h3>
+
+<p><strong>via 'curl'</strong></p>
+
+<div class="highlight"><pre>curl -L https://raw.github.com/kepbod/ivim/master/tools/bootstrap.sh | bash
+</pre></div>
+
+<p><strong>via 'wget'</strong></p>
+
+<div class="highlight"><pre>wget --no-check-certificate https://raw.github.com/kepbod/ivim/master/tools/bootstrap.sh -O - | bash
+</pre></div>
+
+<h2>Updating</h2>
+
+<div class="highlight"><pre>bash <span class="nv">$HOME</span>/ivim/tools/update.sh
+</pre></div>
+
+<p><em>If you confront errors when you update vim plugins, please run command below.</em></p>
+
+<div class="highlight"><pre>bash <span class="nv">$HOME</span>/ivim/tools/restore.sh
+</pre></div>
+
+<h2>Requirements</h2>
+
+<p><strong>Vim</strong></p>
+
+<ul>
+<li>This distribution is adapted to both <a href="http://www.vim.org/download.php">Vim</a> and <a href="http://www.vim.org/download.php#mac">MacVim</a>/<a href="http://www.vim.org/download.php#pc">gVim</a>. Remember that the Vim/MacVim/gVim version should be 7.3+, or errors would occur!</li>
+</ul><p><strong>Git</strong></p>
+
+<ul>
+<li>All the installations are based on <a href="http://git-scm.com/">Git</a> which is a famous distributed revision control system. If you use Windows, you may need install <a href="http://msysgit.github.com//">msysgit</a>.</li>
+</ul><p><strong>Ctags</strong></p>
+
+<ul>
+<li>Ctags generates an index (or tag) file of language objects found in source files that allows these items to be quickly and easily located by a text editor or other utility. I recommend you to use <a href="http://ctags.sourceforge.net/">Exuberant Ctags</a>.</li>
+</ul><p><em>To use this distribution with less bugs, please get more suggestions from <a href="https://github.com/kepbod/ivim/wiki/Tips-for-ivim">here</a></em></p>
+
+<h2>Features</h2>
+
+<p><strong><em>Beautiful</em></strong></p>
+
+<ul>
+<li>
+<p>Use lots of famous colorschemes to make your eyes feel comfortable in both Vim and MacVim/gVim.</p>
+
+<ul>
+<li>
+<a href="https://github.com/w0ng/vim-hybrid">Hybrid</a>(default)</li>
+<li><a href="https://github.com/chriskempson/tomorrow-theme">Tomorrow-Night</a></li>
+<li><a href="https://github.com/altercation/vim-colors-solarized">Solarized</a></li>
+<li><a href="https://github.com/nanotech/jellybeans.vim">Jellybeans</a></li>
+</ul>
+<p><img src="https://lh6.googleusercontent.com/-e-CWpdeh7GA/UJuyYagHmDI/AAAAAAAAAHU/k4hYnUHv2xg/s910/Tooltip_005.png" alt="screenshot"></p>
+</li>
+</ul><p><strong><em>Efficient</em></strong></p>
+
+<ul>
+<li>Make using Vim more convenient and faster, and lots of useful plugins (such as <a href="https://github.com/Shougo/neocomplcache">Neocomplcache</a>, <a href="https://github.com/scrooloose/nerdcommenter">NERD_commenter</a>, <a href="https://github.com/scrooloose/syntastic">Syntastic</a> and <a href="https://github.com/xuhdev/SingleCompile">SingleCompile</a>) confirm a better performance of Vim.</li>
+</ul><p><em>This distribution is completely customisable using a <code>~/.vimrc.local</code>, <code>~/.gvimrc.local</code> and <code>~/.vimrc.bundles.local</code>!</em></p>
+
+<h2>Plugin List</h2>
+
+<ul>
+<li>
+<a href="https://github.com/gmarik/vundle">Vundle</a> - Manage the Vim scripts</li>
+<li>
+<a href="https://github.com/majutsushi/tagbar">Tagbar</a> - Browse the tags of source code files</li>
+<li>
+<a href="https://github.com/scrooloose/nerdtree">NERD_tree</a> - Explore filesystem and to open files and directories</li>
+<li>
+<a href="https://github.com/scrooloose/nerdcommenter">NERD_commenter</a> - Provide many different commenting operations and styles</li>
+<li>
+<a href="https://github.com/Shougo/neocomplcache">Neocomplcache</a> - Performs keyword completion by maintaining a cache of keywords</li>
+<li>
+<a href="https://github.com/tpope/vim-surround">surround</a> - Provide mappings to delete, change and add surroundings in pairs</li>
+<li>
+<a href="https://github.com/Raimondi/delimitMate">delimitMate</a> - Provides automatic closing of quotes, parenthesis, brackets, etc.</li>
+<li>
+<a href="https://github.com/kien/ctrlp.vim">Ctrlp</a> - Full path fuzzy file, buffer, mru and tag finder with an intuitive interface</li>
+<li>
+<a href="https://github.com/mileszs/ack.vim">Ack</a> - A replacement for 'grep' using Perl module App::Ack</li>
+<li>
+<a href="https://github.com/godlygeek/tabular">Tabular</a> - Line up text easily</li>
+<li>
+<a href="https://github.com/scrooloose/syntastic">Syntastic</a> - Syntax check that runs files through external syntax checkers</li>
+<li>
+<a href="https://github.com/Lokaltog/vim-easymotion">EasyMotion</a> - Provide a much simpler way to use some motions in Vim</li>
+<li>
+<a href="https://github.com/mutewinter/vim-indent-guides">Indent Guides</a> - Visually display indent levels in Vim</li>
+<li>
+<a href="https://github.com/tpope/vim-fugitive">fugitive</a> - Git wrapper</li>
+<li>
+<a href="https://github.com/sjl/gundo.vim">Gundo</a> - Visualize Vim undo tree</li>
+<li>
+<a href="https://github.com/xolox/vim-easytags">EasyTags</a> - Automated tag generation and syntax highlighting in Vim</li>
+<li>
+<a href="https://github.com/Lokaltog/vim-powerline">Powerline</a> - Create better-looking, more functional Vim statuslines</li>
+<li>
+<a href="https://github.com/xuhdev/SingleCompile">SingleCompile</a> - Compile or run a single source file without leaving Vim</li>
+<li>
+<a href="https://github.com/bkad/CamelCaseMotion">CamelCaseMotion</a> - Refine words motion in Vim</li>
+<li>
+<a href="https://github.com/mattn/zencoding-vim">Zencoding</a> - High-speed HTML, XML, XSL coding and editing</li>
+<li>
+<a href="https://github.com/roman/golden-ratio">Golden Ratio</a> - Resize windows
+automatically using the Golden Ratio</li>
+<li>
+<a href="https://github.com/AndrewRadev/splitjoin.vim">Splitjoin</a> - Switch between a single-line statement and a multi-line one</li>
+<li>
+<a href="https://github.com/Shougo/unite.vim">Unite</a> - Search and display information from arbitrary sources</li>
+<li>
+<a href="https://github.com/tpope/vim-rails">rails.vim</a> - Plugin for working with Ruby on Rails applications</li>
+<li>
+<a href="https://github.com/michaeljsmith/vim-indent-object">Indent Object</a> - Text objects based on indent levels</li>
+<li>
+<a href="https://github.com/chrisbra/NrrwRgn">NrrwRgn</a> - Focus on a region and making the rest inaccessible</li>
+<li>
+<a href="https://github.com/tpope/vim-unimpaired">unimpaired.vim</a> - Complementary pairs of mappings</li>
+<li>
+<a href="https://github.com/tpope/vim-abolish">abolish.vim</a> - Search for, substitute, and abbreviate multiple variants of a word</li>
+<li>
+<a href="https://github.com/benmills/vimux">vimux</a> - Easily interact with tmux from vim</li>
+<li>
+<a href="https://github.com/swaroopch/vim-markdown-preview">markdown-preview</a> - Select Markdown text, render to HTML and preview in browser</li>
+<li>
+<a href="https://github.com/h1mesuke/unite-outline">unite-outline</a> - Provide your Vim's buffer with the outline view</li>
+<li>
+<a href="https://github.com/mutewinter/swap-parameters">swap-parameters</a> - Swap parameters</li>
+<li>
+<a href="https://github.com/sampsyo/autolink.vim">autolink.vim</a> - Find and insert URLs for links in Markdown and ReST documents</li>
+<li>
+<a href="https://github.com/coderifous/textobj-word-column.vim">textobj-word-column.txt</a> - Make operating on columns of code conceptually simpler and reduces keystrokes</li>
+<li>
+<a href="https://github.com/AndrewRadev/simple_bookmarks.vimux">simple_bookmarks.vimux</a> - Provide several commands to manage named bookmarks</li>
+<li>
+<a href="https://github.com/spolu/dwm.vim">dwm.vim</a> - Add tiled window management capabilities to Vim</li>
+<li>
+<a href="https://github.com/tpope/vim-speeddating">vim-speeddating</a> Use CTRL-A/CTRL-X to increment dates, times, and more</li>
+</ul><p><strong>Each plugin has its unique requirements and configurations, so if you have any questions with them, please check help files of them first!</strong></p>
+
+<h2>Vim Tips</h2>
+
+<p><em>Learning Vim</em></p>
+
+<ul>
+<li>
+<p>A good learning method of Vim is vimtutor, a 30 minute tutorial that teaches the most basic Vim functionality hands-on.</p>
+
+<p>To try it, just type <code>vimtutor</code> on terminal.</p>
+</li>
+<li>
+<p>Another way to get familiar with Vim commands and settings is just rely on the strong help system of Vim.</p>
+
+<p>It's easy and convenient to type <code>:h</code> or <code>:help</code> in Vim for help of whatever you want to know.</p>
+</li>
+<li><p>A beautiful Vim cheat sheet is available <a href="http://michael.peopleofhonoronly.com/vim/">here</a>. If you want one, just click it!</p></li>
+</ul><p><em>Key Mappings</em></p>
+
+<ul>
+<li>
+<p>Because I have set some key mappings for more convenient typing and checking, you may feel inconvenient with them at start. But if you get familiar with them, I'm sure you will love them.</p>
+
+<p>You can just type <code>:map</code> in Vim to see them.</p>
+</li>
+</ul><p><em>More Tips</em></p>
+
+<ul>
+<li>
+<a href="http://vim.wikia.com/wiki/Vim_Tips_Wiki">Vim_Tips_Wiki</a> is an excellent website, and you can learn much from it.</li>
+<li>
+<a href="http://vimcasts.org">Vimcasts</a> publishes free screencasts about Vim. It's useful and interesting! Believe me!</li>
+</ul><p><strong>Hope You Enjoy Vimming</strong></p>
+
+<h2>Notes</h2>
+
+<p><strong>This distribution refers to many other famous Vim configurations (mainly contain <a href="https://github.com/spf13/spf13-vim">spf13-vim</a>, <a href="https://github.com/mutewinter/dot_vim">Champions' Configuration</a> and <a href="https://github.com/sjl/dotfiles/tree/master/vim">Steve's Configuration</a>), so there may be some unavoidable errors in it, but I'll try my best to make it work well. If you have any questions, please feel free to <a href="https://github.com/kepbod/ivim/issues">post your issues and suggestions</a>! Thanks!</strong></p>
+      </section>
+
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
+</html>
