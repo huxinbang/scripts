@@ -1,5 +1,10 @@
 # ivim - An easy & highly customizable vim configuration 
 
+### Simple version for quick start
+```bash
+mv ~/.vimrc ~/.vimrc.bak.`date +'%Y-%m-%d-%H-%M-%S'`;wget "https://raw.githubusercontent.com/huxinbang/ivim/master/vimrc_simple" -O ~/.vimrc
+```
+
 ### Automatic Installation (*nix only)
 
 **via 'curl'**
@@ -19,6 +24,7 @@ bash <(wget --no-check-certificate https://raw.githubusercontent.com/huxinbang/i
 ```bash
 bash $HOME/ivim/setup.sh -n
 ```
+
 
 ## Configuration
 
