@@ -2,7 +2,8 @@
 
 ### Simple version for quick start
 ```bash
-mv ~/.vimrc ~/.vimrc.bak.`date +'%Y-%m-%d-%H-%M-%S'`;wget "https://raw.githubusercontent.com/huxinbang/ivim/master/vimrc_simple" -O ~/.vimrc
+mv ~/.vimrc ~/.vimrc.bak.`date +'%Y-%m-%d-%H-%M-%S'`
+wget "https://raw.githubusercontent.com/huxinbang/ivim/master/vimrc_simple" -O ~/.vimrc
 ```
 
 ### Automatic Installation (*nix only)
