@@ -146,7 +146,8 @@ if count(g:ivim_bundle_groups, 'ui') " UI setting
     NeoBundle 'w0ng/vim-hybrid' " Colorscheme hybrid
     NeoBundle 'altercation/vim-colors-solarized' " Colorscheme solarized
     NeoBundle 'chriskempson/base16-vim' " Colorscheme base16
-    NeoBundle 'bling/vim-airline' " Status line
+    NeoBundle 'vim-airline/vim-airline' " Status line
+    NeoBundle 'vim-airline/vim-airline-themes' " themes
     NeoBundle 'bling/vim-bufferline' " Buffer line
     NeoBundle 'nathanaelkane/vim-indent-guides' " Indent guides
     NeoBundle 'mhinz/vim-startify' " Start page
@@ -160,7 +161,7 @@ if count(g:ivim_bundle_groups, 'enhance') " Vim enhancement
     NeoBundle 'tpope/vim-repeat' " Repeat
     NeoBundle 'terryma/vim-multiple-cursors' " Multiple cursors
     NeoBundle 'mbbill/undotree' " Undo tree
-    " NeoBundle 'tpope/vim-surround' " Surround
+    NeoBundle 'tpope/vim-surround' " Surround
     NeoBundle 'godlygeek/tabular' " Tabular
     NeoBundle 'AndrewRadev/splitjoin.vim' " Splitjoin
     NeoBundle 'sickill/vim-pasta' " Vim pasta
