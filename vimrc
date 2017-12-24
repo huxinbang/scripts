@@ -176,7 +176,7 @@ if count(g:ivim_bundle_groups, 'move') " Moving
     NeoBundle 'Lokaltog/vim-easymotion' " Easy motion
     NeoBundle 'bkad/CamelCaseMotion' " Camel case motion
     NeoBundle 'majutsushi/tagbar' " Tag bar
-    NeoBundle 'edsono/vim-matchit' " Match it
+    " NeoBundle 'edsono/vim-matchit' " Match it
     NeoBundle 'Shougo/unite.vim' " Search engine
     NeoBundle 'Shougo/unite-outline' " Unite outline
     NeoBundle 'Shougo/vimproc', {
