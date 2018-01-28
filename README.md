@@ -24,6 +24,11 @@ bash <(wget --no-check-certificate https://raw.githubusercontent.com/huxinbang/i
 
 ```bash
 bash $HOME/ivim/setup.sh -n
+
+# install source-code-pro font
+git clone --depth 1 --branch release https://github.com/adobe-fonts/source-code-pro.git ~/.fonts/adobe-fonts/source-code-pro
+fc-cache -f -v ~/.fonts/adobe-fonts/source-code-pro
+
 ```
 
 
