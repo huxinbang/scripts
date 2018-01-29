@@ -11,19 +11,19 @@ wget "https://raw.githubusercontent.com/huxinbang/ivim/master/vimrc_simple" -O ~
 **via 'curl'**
 
 ```bash
-bash <(curl -L https://raw.githubusercontent.com/huxinbang/ivim/master/setup.sh) -i
+bash <(curl -L https://raw.githubusercontent.com/huxinbang/ivim/master/setup_https.sh) -i
 ```
 
 **via 'wget'**
 
 ```bash
-bash <(wget --no-check-certificate https://raw.githubusercontent.com/huxinbang/ivim/master/setup.sh -O -) -i
+bash <(wget --no-check-certificate https://raw.githubusercontent.com/huxinbang/ivim/master/setup_https.sh -O -) -i
 ```
 
 ## Updating
 
 ```bash
-bash $HOME/ivim/setup.sh -n
+bash $HOME/ivim/setup_https.sh -n
 
 # install source-code-pro font
 git clone --depth 1 --branch release https://github.com/adobe-fonts/source-code-pro.git ~/.fonts/adobe-fonts/source-code-pro
