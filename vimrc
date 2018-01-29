@@ -205,6 +205,7 @@ if count(g:ivim_bundle_groups, 'complete') " Completion
     endif
     NeoBundle 'Shougo/neosnippet.vim' " Snippet engine
     NeoBundle 'Shougo/neosnippet-snippets' " Snippets
+    NeoBundle 'DoxygenToolkit.vim' " Doxygen
     NeoBundle 'honza/vim-snippets' " Snippets
 endif
 
@@ -845,7 +846,18 @@ endif
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" keybindings  for huxinbang@gmail.com
+" doxygen
+let g:DoxygenToolkit_briefTag_funcName = "yes"
+let g:doxygenToolkit_authorName="Xinbang Hu"
+let g:doxygen_enhanced_color = 1
+let g:load_doxygen_syntax = 1
+
+" keybindings for huxinbang@gmail.com
+" Doxygen keys
+map <F3>a :DoxAuthor
+map <F3>f :Dox
+map <F3>b :DoxBlock
+map <F3>c O/** */<Left><Left>
 
 " Tab configuration
 map <leader>tn :tabnew! %<cr>
