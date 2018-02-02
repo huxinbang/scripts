@@ -20,10 +20,14 @@ bash <(curl -L https://raw.githubusercontent.com/huxinbang/ivim/master/setup_htt
 bash <(wget --no-check-certificate https://raw.githubusercontent.com/huxinbang/ivim/master/setup_https.sh -O -) -i
 ```
 
-## Updating
+## about dev
 
 ```bash
 bash $HOME/ivim/setup_https.sh -n
+
+# install libs for emacs
+
+sudo apt-get install build-essential texinfo libx11-dev libxpm-dev libjpeg-dev libpng-dev libgif-dev libtiff-dev libgtk2.0-dev libncurses-dev libgnutls-dev 
 
 # spacemacs
 git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
