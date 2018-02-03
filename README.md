@@ -27,7 +27,7 @@ bash $HOME/ivim/setup_https.sh -n
 
 # install libs for emacs
 
-sudo apt-get install build-essential texinfo libx11-dev libxpm-dev libjpeg-dev libpng-dev libgif-dev libtiff-dev libgtk2.0-dev libncurses-dev libgnutls-dev 
+sudo apt-get install build-essential texinfo libx11-dev libxpm-dev libjpeg-dev libpng-dev libgif-dev libtiff-dev libgtk2.0-dev libncurses-dev libgnutls-dev exuberant-ctags
 
 # spacemacs
 git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
