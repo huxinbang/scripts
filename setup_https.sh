@@ -51,6 +51,7 @@ install() {
     rm -rf $HOME/ivim
     git clone https://github.com/huxinbang/ivim.git $HOME/ivim
     ln -s $HOME/ivim/vimrc $HOME/.vimrc
+    ln -s $HOME/ivim/clang-format $HOME/.clang-format
     color_print "Installing NeoBundle..."
     git clone https://github.com/Shougo/neobundle.vim.git $HOME/.vim/bundle/neobundle.vim
     color_print "Installing plugins using NeoBundle..."
