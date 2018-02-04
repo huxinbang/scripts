@@ -43,7 +43,7 @@ require() {
 
 backup() {
     color_print "Backing up current vim config..."
-    for i in $HOME/.vim $HOME/.vimrc $HOME/.gvimrc; do [ -e $i ] && mv -f $i $i.backup; done
+    for i in $HOME/.vim $HOME/.vimrc $HOME/.gvimrc $HOME/.clang-format $HOME/.spacemacs; do [ -e $i ] && mv -f $i $i.backup; done
 }
 
 install() {
@@ -51,6 +51,8 @@ install() {
     rm -rf $HOME/ivim
     git clone git://github.com/huxinbang/ivim.git $HOME/ivim
     ln -s $HOME/ivim/vimrc $HOME/.vimrc
+    ln -s $HOME/ivim/clang-format $HOME/.clang-format
+    ln -s $HOME/ivim/spacemacs $HOME/.spacemacs
     color_print "Installing NeoBundle..."
     git clone git://github.com/Shougo/neobundle.vim.git $HOME/.vim/bundle/neobundle.vim
     color_print "Installing plugins using NeoBundle..."
