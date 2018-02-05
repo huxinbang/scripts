@@ -42,7 +42,8 @@ values."
      ;; <M-m f e R> (Emacs style) to install them.
      ;; ----------------------------------------------------------------
      helm
-     auto-completion
+     (auto-completion :variables
+                      auto-completion-enable-snippets-in-popup t)
      ;; better-defaults
      emacs-lisp
      git
@@ -50,7 +51,7 @@ values."
      ;; org
      ;; (shell :variables
      ;;        shell-default-height 30
-     ;;        shell-default-position 'bottom)
+     ;;       shell-default-position 'bottom)
      ;; spell-checking
      syntax-checking
      version-control
@@ -321,13 +322,22 @@ you should place your code here."
   ;; no more sybmolic link warning for .spacemacs
   (setq vc-follow-symlinks t)
 
-  ;; set c indent
-  (setq-default indent-tabs-mode nil)
-  (setq-default tab-width 4)
-  (setq indent-line-function 'insert-tab)
-  (setq c-default-style "linux") 
-  (setq c-basic-offset 4) 
-  (c-set-offset 'comment-intro 0)
+  ;; set c indent begin
+
+  ;; (setq-default indent-tabs-mode nil)
+  ;; (setq-default tab-width 4)
+  ;; (setq indent-line-function 'insert-tab)
+  ;; (setq c-default-style "linux") 
+  ;; (setq c-basic-offset 4) 
+  ;; (c-set-offset 'comment-intro 0)
+  ;; (c-set-offset 'substatement-open '0) ; brackets should be at same indentation level as the statements they open
+  ;; (c-set-offset 'inline-open '+)
+  ;; (c-set-offset 'block-open '+)
+  ;; (c-set-offset 'brace-list-open '+)   ; all "opens" should be indented by the c-indent-level
+  ;; (c-set-offset 'case-label '+)
+  ;; (add-hook 'c-mode-common-hook '(lambda () (c-toggle-auto-hungry-state 1)))
+
+  ;; set c indent end
 
   )
 
@@ -338,13 +348,8 @@ you should place your code here."
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(c-default-style
-   (quote
-    ((c-mode . "")
-     (c++-mode . "")
-     (java-mode . "java")
-     (awk-mode . "awk")
-     (other . "gnu"))))
+ '(c-default-style (quote ((c-mode . "") (c++-mode . ""))))
+
  '(package-selected-packages
    (quote
     (disaster company-c-headers cmake-mode clang-format yapfify pyvenv pytest pyenv-mode py-isort pip-requirements live-py-mode hy-mode dash-functional helm-pydoc cython-mode company-anaconda anaconda-mode pythonic smeargle orgit magit-gitflow helm-gitignore helm-company helm-c-yasnippet gitignore-mode gitconfig-mode gitattributes-mode git-timemachine git-messenger git-link git-gutter-fringe+ git-gutter-fringe fringe-helper git-gutter+ git-gutter fuzzy flycheck-pos-tip pos-tip flycheck evil-magit magit magit-popup git-commit ghub with-editor diff-hl company-statistics company auto-yasnippet yasnippet ac-ispell auto-complete mmm-mode markdown-toc markdown-mode gh-md ws-butler winum which-key volatile-highlights vi-tilde-fringe uuidgen use-package toc-org spaceline restart-emacs request rainbow-delimiters popwin persp-mode pcre2el paradox org-plus-contrib org-bullets open-junk-file neotree move-text macrostep lorem-ipsum linum-relative link-hint indent-guide hungry-delete hl-todo highlight-parentheses highlight-numbers highlight-indentation helm-themes helm-swoop helm-projectile helm-mode-manager helm-make helm-flx helm-descbinds helm-ag google-translate golden-ratio flx-ido fill-column-indicator fancy-battery eyebrowse expand-region exec-path-from-shell evil-visualstar evil-visual-mark-mode evil-unimpaired evil-tutor evil-surround evil-search-highlight-persist evil-numbers evil-nerd-commenter evil-mc evil-matchit evil-lisp-state evil-indent-plus evil-iedit-state evil-exchange evil-escape evil-ediff evil-args evil-anzu eval-sexp-fu elisp-slime-nav dumb-jump diminish define-word column-enforce-mode clean-aindent-mode auto-highlight-symbol auto-compile aggressive-indent adaptive-wrap ace-window ace-link ace-jump-helm-line))))
