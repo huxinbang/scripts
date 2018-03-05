@@ -859,6 +859,8 @@ map <F3>f :Dox
 map <F3>b :DoxBlock
 map <F3>c O/** */<Left><Left>
 
+map <F5> /\/\/<CR>xxi/*<Esc>A*/<Esc>
+
 " Tab configuration
 map <leader>tn :tabnew! %<cr>
 map <leader>te :tabedit 
