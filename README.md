@@ -11,13 +11,22 @@ wget "https://raw.githubusercontent.com/huxinbang/ivim/master/vimrc_simple" -O ~
 **via 'curl'**
 
 ```bash
+# git mode
+bash <(curl -L https://raw.githubusercontent.com/huxinbang/ivim/master/setup.sh) -i
+
+# https mode
 bash <(curl -L https://raw.githubusercontent.com/huxinbang/ivim/master/setup_https.sh) -i
 ```
 
 **via 'wget'**
 
 ```bash
+# git mode
+bash <(wget --no-check-certificate https://raw.githubusercontent.com/huxinbang/ivim/master/setup.sh -O -) -i
+
+# https mode
 bash <(wget --no-check-certificate https://raw.githubusercontent.com/huxinbang/ivim/master/setup_https.sh -O -) -i
+
 ```
 
 ## about dev
