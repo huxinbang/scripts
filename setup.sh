@@ -33,8 +33,16 @@ logo() {
 
 require() {
     color_print "Checking requirements for ivim..."
-    color_print "Checking vim version..."
-    vim --version | grep 7.[3-9] || die "Your vim's version is too low!\nPlease download higher version(7.3+) from http://www.vim.org/download.php"
+    if [ $1 = 0 ]; then
+        color_print "Checking Vim version..."
+        vim --version | grep -E 7.[3-9]\|8.[0-9] || die "Your vim's version is too low!\nPlease download higher version(7.3+) from http://www.vim.org/download.php"
+    elif [ $1 = 1 ]; then
+        color_print "Checking Vim version..."
+        vim --version | grep -E 8.[0-9] || die "Your vim's version is too low!\nPlease download higher version(8.0+) from http://www.vim.org/download.php"
+    else
+        color_print "Checking NeoVim version..."
+        nvim --version || die "Please install NeoVim according to https://github.com/neovim/neovim/wiki/Installing-Neovim"
+    fi
     color_print "Checking if git exists..."
     which git || die "No git installed!\nPlease install git from http://git-scm.com/downloads/"
     color_print "Check if ctags exists..."
