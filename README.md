@@ -11,19 +11,21 @@ wget "https://raw.githubusercontent.com/huxinbang/ivim/master/vimrc_simple" -O ~
 **via 'curl'**
 
 ```bash
-bash <(curl -L https://raw.githubusercontent.com/huxinbang/ivim/master/setup_https.sh) -i
+bash <(curl -L https://raw.githubusercontent.com/huxinbang/ivim/master/setup.sh) -i
 ```
 
 **via 'wget'**
 
 ```bash
-bash <(wget --no-check-certificate https://raw.githubusercontent.com/huxinbang/ivim/master/setup_https.sh -O -) -i
+# git mode
+bash <(wget --no-check-certificate https://raw.githubusercontent.com/huxinbang/ivim/master/setup.sh -O -) -i
+
 ```
 
 ## about dev
 
 ```bash
-bash $HOME/ivim/setup_https.sh -n
+bash $HOME/ivim/setup.sh -n
 
 # install libs for emacs
 
