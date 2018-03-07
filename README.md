@@ -25,7 +25,7 @@ bash <(wget --no-check-certificate https://raw.githubusercontent.com/huxinbang/i
 ## about dev
 
 ```bash
-bash $HOME/ivim/setup_https.sh -n
+bash $HOME/ivim/setup.sh -n
 
 # install libs for emacs
 
