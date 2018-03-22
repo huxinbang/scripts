@@ -28,6 +28,22 @@ function! UserInit()
   Plug 'junegunn/seoul256.vim'
   Plug 'scrooloose/nerdcommenter'
 
+  Plug 'autozimu/LanguageClient-neovim', {
+    \ 'branch': 'next',
+    \ 'do': 'bash install.sh',
+    \ }
+
+  " (Optional) Multi-entry selection UI.
+  Plug 'junegunn/fzf'
+
+  " (Completion plugin option 1)
+  Plug 'roxma/nvim-completion-manager'
+  " (Completion plugin option 2)
+  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+
+  Plug 'jsfaint/gen_tags.vim'
+  Plug 'roxma/ncm-clang'
+
 endfunction
 
 " Override the default settings as well as adding extras
