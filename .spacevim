@@ -49,6 +49,15 @@ endfunction
 " Override the default settings as well as adding extras
 function! UserConfig()
 
+  set undofile                " Save undos after file closes
+  set undodir=$HOME/.vim/undo " where to save undo histories
+  set undolevels=1000         " How many undos
+  set undoreload=10000        " number of lines to save for undo
+
+  map <silent> <leader>2 :diffget 2<CR> :diffupdate<CR>
+  map <silent> <leader>3 :diffget 3<CR> :diffupdate<CR>
+  map <silent> <leader>4 :diffget 4<CR> :diffupdate<CR>
+
   " If you have installed the powerline fonts and want to enable airline layer
   " let g:airline_powerline_fonts=1
 
@@ -60,6 +69,8 @@ function! UserConfig()
   map <leader>te :tabedit
   map <leader>tc :tabclose<cr>
   map <leader>tm :tabmove
+  inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
+  inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 
   " When pressing <leader>cd switch to the directory of the open buffer
   map <leader>cd :cd %:p:h<cr>
