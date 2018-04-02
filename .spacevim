@@ -13,7 +13,8 @@ let g:spacevim_plug_home = '~/.vim/plugged'
 " Enable the existing layers in space-vim
 let g:spacevim_layers = [
       \ 'fzf', 'unite', 'better-defaults',
-      \ 'which-key',
+      \ 'which-key', 'code-snippets', 'editing',
+      \ 'programming', 'formatting'
       \ ]
 
 " If you want to have more control over the layer, try using Layer command.
@@ -44,10 +45,34 @@ function! UserInit()
   Plug 'jsfaint/gen_tags.vim'
   Plug 'roxma/ncm-clang'
 
+  Plug 'Shougo/neocomplete'
+  Plug 'Shougo/neosnippet'
+  Plug 'Shougo/neosnippet-snippets'
+
 endfunction
 
 " Override the default settings as well as adding extras
 function! UserConfig()
+
+  " Plugin key-mappings.
+  " Note: It must be "imap" and "smap".  It uses <Plug> mappings.
+  imap <C-k>     <Plug>(neosnippet_expand_or_jump)
+  smap <C-k>     <Plug>(neosnippet_expand_or_jump)
+  xmap <C-k>     <Plug>(neosnippet_expand_target)
+
+  " SuperTab like snippets behavior.
+  " Note: It must be "imap" and "smap".  It uses <Plug> mappings.
+  "imap <expr><TAB>
+  " \ pumvisible() ? "\<C-n>" :
+  " \ neosnippet#expandable_or_jumpable() ?
+  " \    "\<Plug>(neosnippet_expand_or_jump)" : "\<TAB>"
+  smap <expr><TAB> neosnippet#expandable_or_jumpable() ?
+        \ "\<Plug>(neosnippet_expand_or_jump)" : "\<TAB>"
+
+  " For conceal markers.
+  if has('conceal')
+    set conceallevel=2 concealcursor=niv
+  endif
 
   set undofile                " Save undos after file closes
   set undodir=$HOME/.vim/undo " where to save undo histories
@@ -66,7 +91,7 @@ function! UserConfig()
 
   " Tab configuration
   map <leader>tn :tabnew! %<cr>
-  map <leader>te :tabedit
+  map <leader>te :tabedit 
   map <leader>tc :tabclose<cr>
   map <leader>tm :tabmove
   inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
