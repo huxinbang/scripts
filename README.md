@@ -24,7 +24,7 @@ bash <(curl -L https://raw.githubusercontent.com/kepbod/ivim/master/setup.sh) -i
 
 ```bash
 # basic
-sudo apt install cmake gcc g++ python2.7 nginx php7.0 zsh 
+sudo apt install cmake gcc g++ python2.7 nginx php7.0 zsh exuberant-ctags
 cd ~/.ssh ssh-keygen -t rsa -b 4096 -C "abc@xyz.com"
 
 # install libs for emacs
