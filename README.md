@@ -23,6 +23,10 @@ bash <(curl -L https://raw.githubusercontent.com/kepbod/ivim/master/setup.sh) -i
 ## about dev
 
 ```bash
+# basic
+sudo apt install cmake gcc g++ python2.7 nginx php7.0 zsh 
+cd ~/.ssh ssh-keygen -t rsa -b 4096 -C "abc@xyz.com"
+
 # install libs for emacs
 
 sudo apt-get install build-essential texinfo libx11-dev libxpm-dev libjpeg-dev libpng-dev libgif-dev libtiff-dev libgtk2.0-dev libncurses-dev libgnutls-dev exuberant-ctags
