@@ -14,6 +14,7 @@ wget "https://raw.githubusercontent.com/huxinbang/ivim/master/vimrc_simple" -O ~
 wget https://raw.githubusercontent.com/huxinbang/ivim/master/clang-format -O ~/.clang-format
 wget https://raw.githubusercontent.com/huxinbang/ivim/master/vimrc.local -O ~/.vimrc.local
 wget https://raw.githubusercontent.com/huxinbang/ivim/master/vimrc.ivim.local -O ~/.vimrc.ivim.local
+wget https://raw.githubusercontent.com/huxinbang/scripts/master/spacemacs -O ~/.spacemacs
 
 bash <(curl -L https://raw.githubusercontent.com/kepbod/ivim/master/setup.sh) -i
 
