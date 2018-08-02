@@ -23,6 +23,8 @@ git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
 wget https://raw.githubusercontent.com/huxinbang/scripts/master/.spacemacs -O ~/.spacemacs
 
 #ivim 
+bash <(curl -L https://raw.githubusercontent.com/kepbod/ivim/master/setup.sh) -i
+
 wget https://raw.githubusercontent.com/huxinbang/ivim/master/.vimrc.local -O ~/.vimrc.local
 wget https://raw.githubusercontent.com/huxinbang/ivim/master/.vimrc.ivim.local -O ~/.vimrc.ivim.local
 
