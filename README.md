@@ -3,21 +3,7 @@
 ### Simple version for quick start
 ```bash
 mv ~/.vimrc ~/.vimrc.bak.`date +'%Y-%m-%d-%H-%M-%S'`
-wget "https://raw.githubusercontent.com/huxinbang/ivim/master/vimrc_simple" -O ~/.vimrc
-```
-
-### Automatic Installation (*nix only)
-
-**via 'curl'**
-
-```bash
-wget https://raw.githubusercontent.com/huxinbang/ivim/master/clang-format -O ~/.clang-format
-wget https://raw.githubusercontent.com/huxinbang/ivim/master/vimrc.local -O ~/.vimrc.local
-wget https://raw.githubusercontent.com/huxinbang/ivim/master/vimrc.ivim.local -O ~/.vimrc.ivim.local
-wget https://raw.githubusercontent.com/huxinbang/scripts/master/spacemacs -O ~/.spacemacs
-
-bash <(curl -L https://raw.githubusercontent.com/kepbod/ivim/master/setup.sh) -i
-
+wget "https://raw.githubusercontent.com/huxinbang/ivim/master/.vimrc_simple" -O ~/.vimrc
 ```
 
 
@@ -34,6 +20,13 @@ sudo apt-get install build-essential texinfo libx11-dev libxpm-dev libjpeg-dev l
 
 # spacemacs
 git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
+wget https://raw.githubusercontent.com/huxinbang/scripts/master/.spacemacs -O ~/.spacemacs
+
+#ivim 
+wget https://raw.githubusercontent.com/huxinbang/ivim/master/.vimrc.local -O ~/.vimrc.local
+wget https://raw.githubusercontent.com/huxinbang/ivim/master/.vimrc.ivim.local -O ~/.vimrc.ivim.local
+
+wget https://raw.githubusercontent.com/huxinbang/ivim/master/.clang-format -O ~/.clang-format
 
 # install source-code-pro font
 git clone --depth 1 --branch release https://github.com/adobe-fonts/source-code-pro.git ~/.fonts/adobe-fonts/source-code-pro
