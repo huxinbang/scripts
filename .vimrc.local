@@ -17,6 +17,10 @@ set tabstop=4
 set shiftwidth=4 " Indent/outdent by four columns
 set shiftround " Indent/outdent to nearest tabstop
 
+" stop line breaks
+set textwidth=0
+set wrapmargin=0
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " keybindings  for huxinbang@gmail.com
 
