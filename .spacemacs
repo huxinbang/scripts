@@ -358,6 +358,8 @@ you should place your code here."
     (setq indent-tabs-mode 1)
     )
 
+  (add-hook 'c-mode-hook #'(lambda () (modify-syntax-entry ?_ "w")))
+
   (add-hook 'go-mode-hook 'my-go-mode-hook)
   (setq yas-snippet-dirs
         (append yas-snippet-dirs '("~/.emacs.d/private/hxb-handy-kit/snippets"))
