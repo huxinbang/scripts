@@ -22,6 +22,10 @@ sudo apt-get install build-essential texinfo libx11-dev libxpm-dev libjpeg-dev l
 git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
 wget https://raw.githubusercontent.com/huxinbang/scripts/master/.spacemacs -O ~/.spacemacs
 
+# using redguardtoo's emacs.d
+cd ~; git clone https://github.com/redguardtoo/emacs.d.git .emacs.d
+wget https://raw.githubusercontent.com/huxinbang/scripts/master/.custom.el -O ~/.custom.el
+
 #ivim 
 bash <(curl -L https://raw.githubusercontent.com/kepbod/ivim/master/setup.sh) -i
 
