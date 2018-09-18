@@ -1,6 +1,7 @@
 ;; my custom settings.
 
  ;; Load the theme (doom-one, doom-dark, etc.)
+ (require-package 'doom-themes)
  (load-theme 'doom-molokai t)
 
  ;; {{ use `,` as leader key
