@@ -1,9 +1,12 @@
 
 set nocompatible " Get out of vi compatible mode
 set fencs=utf8,gbk,gb2312,gb18030,cp936 " Chinese encodings
-
+set encoding=utf8
 filetype plugin indent on " Enable filetype
+
 let mapleader=',' " Change the mapleader
+map <leader>te :tabedit 
+map <leader>cd :cd %:p:h<cr>
 
 set autoindent " Preserve current indent on new lines
 set cindent " set C style indent
@@ -12,6 +15,3 @@ set softtabstop=4 " Indentation levels every four columns
 set tabstop=4
 set shiftwidth=4 " Indent/outdent by four columns
 set shiftround " Indent/outdent to nearest tabstop
-
-map <leader>te :tabedit 
-map <leader>cd :cd %:p:h<cr>
