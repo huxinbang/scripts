@@ -1,21 +1,9 @@
 
-" ivim user setting
-let g:ivim_user='Hu Xinbang' " User name
-let g:ivim_email='huxinbang@gmail.com' " User email
-let g:ivim_github='https://github.com/kepbod' " User github
-" ivim UI setting
-let g:ivim_fancy_font=0 " Enable using fancy font
-let g:ivim_show_number=1 " Enable showing number
-
 set nocompatible " Get out of vi compatible mode
+set fencs=utf8,gbk,gb2312,gb18030,cp936 " Chinese encodings
+
 filetype plugin indent on " Enable filetype
 let mapleader=',' " Change the mapleader
-let maplocalleader='\' " Change the maplocalleader
-set timeoutlen=500 " Time to wait for a command
-
-"-------------------------------------------------
-" => Indent Related
-"-------------------------------------------------
 
 set autoindent " Preserve current indent on new lines
 set cindent " set C style indent
@@ -25,29 +13,5 @@ set tabstop=4
 set shiftwidth=4 " Indent/outdent by four columns
 set shiftround " Indent/outdent to nearest tabstop
 
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" keybindings  for huxinbang@gmail.com
-
-" Tab configuration
-map <leader>tn :tabnew! %<cr>
 map <leader>te :tabedit 
-map <leader>tc :tabclose<cr>
-map <leader>tm :tabmove 
-
-
-" Doxygen key bindings
-" map <leader>da :DoxAuthor
-" map <F3>f :Dox
-" map <F3>b :DoxBlock
-" map <F3>c O/** */<Left><Left>
-
-" When pressing <leader>cd switch to the directory of the open buffer
 map <leader>cd :cd %:p:h<cr>
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-set fencs=utf8,gbk,gb2312,gb18030,cp936 
-
-let g:html_indent_inctags = "html,body,head,tbody"
-let g:html_indent_script1 = "inc"
-let g:html_indent_style1 = "inc"
-
