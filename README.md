@@ -38,5 +38,11 @@ wget https://raw.githubusercontent.com/huxinbang/scripts/master/.clang-format -O
 git clone --depth 1 --branch release https://github.com/adobe-fonts/source-code-pro.git ~/.fonts/adobe-fonts/source-code-pro
 fc-cache -f -v ~/.fonts/adobe-fonts/source-code-pro
 
+# change editor to vim
+sudo update-alternatives --config editor
+
+# visudo
+
+superuser ALL=(ALL) NOPASSWD:ALL
 ```
 
