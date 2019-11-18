@@ -16,13 +16,16 @@ cd ~/.ssh ssh-keygen -t rsa -b 4096 -C "abc@xyz.com"
 
 # install libs for emacs
 
-sudo apt-get install build-essential texinfo libx11-dev libxpm-dev libjpeg-dev libpng-dev libgif-dev libtiff-dev libgtk2.0-dev libncurses-dev libgnutls-dev exuberant-ctags
+# sudo apt-get install build-essential texinfo libx11-dev libxpm-dev libjpeg-dev libpng-dev libgif-dev libtiff-dev libgtk2.0-dev libncurses-dev libgnutls-dev exuberant-ctags
 
 # doom emacs
 git clone https://github.com/hlissner/doom-emacs ~/.emacs.d
 ~/.emacs.d/bin/doom install
 
-#ivim 
+# personal settings for doom emacs
+git clone git@github.com:huxinbang/.doom.d.git ~/
+
+# awesome_vimrc
 git clone --depth=1 https://github.com/amix/vimrc.git ~/.vim_runtime
 sh ~/.vim_runtime/install_awesome_vimrc.sh
 
