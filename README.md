@@ -1,4 +1,4 @@
-# ivim - An easy & highly customizable vim configuration 
+# personal editor settings
 
 ### Simple version for quick start
 ```bash
