@@ -18,21 +18,13 @@ cd ~/.ssh ssh-keygen -t rsa -b 4096 -C "abc@xyz.com"
 
 sudo apt-get install build-essential texinfo libx11-dev libxpm-dev libjpeg-dev libpng-dev libgif-dev libtiff-dev libgtk2.0-dev libncurses-dev libgnutls-dev exuberant-ctags
 
-# spacemacs
-git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
-wget https://raw.githubusercontent.com/huxinbang/scripts/master/.spacemacs -O ~/.spacemacs
-
-# using redguardtoo's emacs.d
-cd ~; git clone https://github.com/redguardtoo/emacs.d.git .emacs.d
-wget https://raw.githubusercontent.com/huxinbang/scripts/master/.custom.el -O ~/.custom.el
+# doom emacs
+git clone https://github.com/hlissner/doom-emacs ~/.emacs.d
+~/.emacs.d/bin/doom install
 
 #ivim 
-bash <(curl -L https://raw.githubusercontent.com/kepbod/ivim/master/setup.sh) -i
-
-wget https://raw.githubusercontent.com/huxinbang/scripts/master/.vimrc.local -O ~/.vimrc.local
-wget https://raw.githubusercontent.com/huxinbang/scripts/master/.vimrc.ivim.local -O ~/.vimrc.ivim.local
-
-wget https://raw.githubusercontent.com/huxinbang/scripts/master/.clang-format -O ~/.clang-format
+git clone --depth=1 https://github.com/amix/vimrc.git ~/.vim_runtime
+sh ~/.vim_runtime/install_awesome_vimrc.sh
 
 # install source-code-pro font
 git clone --depth 1 --branch release https://github.com/adobe-fonts/source-code-pro.git ~/.fonts/adobe-fonts/source-code-pro
