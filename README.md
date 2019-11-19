@@ -23,7 +23,7 @@ git clone https://github.com/hlissner/doom-emacs ~/.emacs.d
 ~/.emacs.d/bin/doom install
 
 # personal settings for doom emacs
-git clone git@github.com:huxinbang/.doom.d.git ~/
+git clone https://github.com/huxinbang/.doom.d.git ~/.doom.d
 
 # awesome_vimrc
 git clone --depth=1 https://github.com/amix/vimrc.git ~/.vim_runtime
