@@ -37,7 +37,7 @@ This function should only modify configuration layer settings."
      restclient
      javascript
      python
-     go
+     (go :variables go-tab-width 4)
      sql
 
      (plantuml :variables plantuml-jar-path "~/plantuml.jar")
