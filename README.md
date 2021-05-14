@@ -43,6 +43,6 @@ superuser ALL=(ALL) NOPASSWD:ALL
 # spacemacs
 # https://github.com/syl20bnr/spacemacs
 git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
-wget https://raw.githubusercontent.com/huxinbang/scripts/master/.spacemacs -w ~/.spacemacs
+
 ```
 
